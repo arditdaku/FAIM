@@ -3,12 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="left"></div>
-      <div class="right"></div>
-    </div>
+    <main class="log-in">
+      <div class="left-side">
+        <h1 class="font-logo">fieldly</h1>
+        <h3 class="welcome-text">Log in.</h3>
+        <p>Welcome to fixed assets & inventory managment system</p>
+
+        <form action="submit" class="login-form">
+          <label for="email">Your email</label>
+          <input type="email" id="email" placeholder="name@domain.com" />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="your secret password"
+          />
+          <button type="submit">Login</button>
+        </form>
+
+        <span>Don't have an account? <a href="signup.html">Sign Up</a></span>
+        <a href="#">Forgot password?</a>
+      </div>
+      <div class="right-side">
+        <div></div>
+      </div>
+    </main>
   </body>
 </html>
