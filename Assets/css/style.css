@@ -3,9 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  transition: all 0.5s;
 }
 :root {
-  --main-color: #6f70f5;
+  --main-color: #9ec4fb;
+  --main-button-color: #0c75ff;
+  --background-color: #02044a;
+  --border-color: #0c78ff;
+
+  --secondary-font-color: #aeafc5;
 }
 /**
 * Login Style 
@@ -135,25 +141,10 @@ h3 {
   color: var(--main-color);
 }
 
-p {
-  text-align: center;
-  font: normal normal lighter 1.5rem/2rem Montserrat;
-  letter-spacing: 0px;
-  width: 77%;
-  color: #ffffff;
-}
 p span {
   font-size: 0.7rem;
   margin-top: -5px;
   margin-left: -3px;
-}
-h1 {
-  color: white;
-  font: normal normal bold 3.25rem/3.375rem Montserrat;
-  width: 74%;
-  text-align: center;
-  margin: 0;
-  margin-top: 50px;
 }
 .is-invalid {
   border: 0.1rem solid #ff000066;
@@ -174,8 +165,100 @@ h1 {
   font-size: 1.2rem;
   cursor: pointer;
 }
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  height: 45%;
+  padding: 4%;
+  padding-left: 4%;
+  padding-left: 10%;
+  color: white;
+  justify-content: space-evenly;
+}
+
+.contact-options > div {
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 1%;
+  display: flex;
+  height: 50px;
+  justify-content: start;
+  align-items: center;
+  width: 40%;
+  padding-left: 1%;
+  border-radius: 5.5px;
+}
+.selected-option {
+  border-radius: 5.5px;
+  border: 2px solid var(--main-button-color);
+}
+
+.contact-options > div:hover {
+  border-radius: 5.5px;
+  border: 2px solid var(--main-button-color);
+}
+
+.contact-options > div > i {
+  color: var(--main-button-color);
+  padding-right: 12px;
+}
+.social-buttons > a i {
+  color: white;
+}
+.social-buttons > a > li:hover {
+  background: #0c75ff;
+}
 .example-full-width {
   width: 100%;
+}
+
+/* Contact Form Css */
+.contact-us-container {
+  height: 100vh;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card {
+  background: var(--background-color);
+  border-radius: 10px;
+  width: 90%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-card-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card-left > div:first-child {
+  height: 30%;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+.contact-card-left > div:first-child > h1 {
+  color: white;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.contact-card-left > div:first-child > p {
+  letter-spacing: 0px;
+  color: var(--secondary-font-color);
+  padding-top: 3%;
+  word-break: break-all;
+  width: 42%;
+}
+
+.contact-card-right {
+  width: 50%;
+  height: 100%;
 }
 @media screen and (max-width: 1600px) {
   .log-in img {
