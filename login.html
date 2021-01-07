@@ -4,32 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/Assets//css//style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="log-in">
       <div class="left-side">
-        <h1 class="font-logo">fieldly</h1>
-        <h3 class="welcome-text">Log in.</h3>
-        <p>Welcome to fixed assets & inventory managment system</p>
-
-        <form action="submit" class="login-form">
-          <label for="email">Your email</label>
-          <input type="email" id="email" placeholder="name@domain.com" />
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="your secret password"
-          />
-          <button type="submit">Login</button>
-        </form>
-
-        <span>Don't have an account? <a href="signup.html">Sign Up</a></span>
-        <a href="#">Forgot password?</a>
+        <img src="../../assets/images/Crossplag_Logo_Negativ.png" alt="" />
+        <h1>FIXED ASSETS & INVENTORY MANAGMENT</h1>
+        <p>
+          Faimly is an fixed asset & inventory mangagment system. Which helps in
+          making managment easy and lovable.
+        </p>
+        <h6>© All rights reserved - Faimly<span>TM</span>.</h6>
       </div>
       <div class="right-side">
-        <div></div>
+        <!-- <img
+          class="moblie-logo"
+          src="../../assets/images/Crossplag_Logo.png"
+          alt=""
+        /> -->
+        <div class="sign-up">
+          <h6>If you don't have an account</h6>
+          <button class="submit">
+            <a
+              href="signup.html"
+              style="margin-top: 0; text-decoration: none; color: white"
+              >Sign Up</a
+            >
+          </button>
+        </div>
+        <h3>Sign in</h3>
+        <form action="">
+          <label for="email">Email address</label>
+          <input
+            id="email"
+            type="email"
+            placeholder=""
+            style="font-size: 1rem; padding: 0 10px; width: 100%"
+          />
+
+          <label for="password">Password</label>
+          <div class="password">
+            <input
+              id="password"
+              placeholder=""
+              style="font-size: 1rem; padding: 0 10px; width: 100%"
+            />
+            <span class="input-group-text" (click)="currentPassword()">
+              <i
+                class="fa"
+                [ngClass]="{
+                        'fa-eye-slash': !showPassword,
+                        'fa-eye': showPassword
+                     }"
+              ></i>
+            </span>
+          </div>
+        </form>
+        <div class="center">
+          <button type="submit" class="submit">SIGN IN</button>
+        </div>
       </div>
     </main>
   </body>
