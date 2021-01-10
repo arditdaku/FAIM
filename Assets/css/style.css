@@ -32,7 +32,7 @@
   background: var(--background-color);
   border-radius: 10px;
   width: 90%;
-  height: 75%;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,14 +79,6 @@
   margin: 0;
   margin-top: 13rem;
 }
-.left-side h6 span {
-  font-size: 0.5rem;
-  margin-left: 0px;
-  padding-bottom: 5px;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-}
 
 .right-side {
   width: 60%;
@@ -113,7 +105,7 @@
 }
 
 .login-card > form {
-  height: 50%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,6 +116,10 @@
   width: 60%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
+}
+.login-card > form > div:nth-child(3) {
+  align-items: center;
 }
 .login-card > form > div > label {
   font-family: "Montserrat";
@@ -152,15 +148,15 @@
   font-weight: bold;
 }
 
-.log-in .sign-up {
+.sign-up {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .sign-up h6 {
   margin: 0;
   color: #434343;
-  margin-right: 24px;
+  margin-right: 15px;
   font-size: 1rem;
   font-weight: normal;
 }
@@ -239,7 +235,7 @@
   background: var(--background-color);
   border-radius: 10px;
   width: 90%;
-  height: 75%;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -472,6 +468,94 @@
   cursor: pointer;
 }
 
+/* Signup Page style */
+.signup-container {
+  height: 100vh;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-card {
+  background: var(--background-color);
+  border-radius: 10px;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-card-left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-card-left > div:first-child {
+  height: 30%;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
+.signup-card-left > div:first-child > h1 {
+  color: white;
+  margin: 0;
+  margin-top: 50px;
+}
+.signup-card-left > div:first-child > p {
+  letter-spacing: 0px;
+  color: var(--secondary-font-color);
+  padding-top: 3%;
+  word-break: break-all;
+  width: 42%;
+}
+
+.signup-options {
+  display: flex;
+  flex-direction: column;
+  height: 45%;
+  padding: 4%;
+  padding-left: 4%;
+  padding-left: 10%;
+  color: white;
+  justify-content: space-evenly;
+}
+.signup-options > div:hover {
+  color: white;
+  border-radius: 5.5px;
+  border: 2px solid var(--main-button-color);
+}
+
+.signup-options > div {
+  width: 50%;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 1%;
+  display: flex;
+  height: 50px;
+  justify-content: start;
+  align-items: center;
+  padding-left: 1%;
+  border-radius: 5.5px;
+}
+
+.signup-options > div > span {
+  padding-left: 1rem;
+}
+
+.signup-card-right {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 1600px) {
   .log-in img {
     top: 70px;
