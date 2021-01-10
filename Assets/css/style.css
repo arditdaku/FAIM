@@ -135,6 +135,12 @@
   border: 2px #dfdfe8 solid;
 }
 
+.login-card > form > div > input:focus {
+  outline: none;
+  border-radius: 6px;
+  border: 2px solid#1b7eff;
+}
+
 .submit {
   background: var(--main-color);
   border-radius: 5px;
@@ -486,7 +492,7 @@
   justify-content: center;
 }
 .signup-card-left {
-  width: 40%;
+  width: 30%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -510,16 +516,15 @@
 .signup-card-left > div:first-child > p {
   letter-spacing: 0px;
   color: var(--secondary-font-color);
-  padding-top: 3%;
+  padding-top: 4%;
   word-break: break-all;
-  width: 42%;
+  width: 70%;
 }
 
 .signup-options {
   display: flex;
   flex-direction: column;
   height: 45%;
-  padding: 4%;
   padding-left: 4%;
   padding-left: 10%;
   color: white;
@@ -550,12 +555,116 @@
 }
 
 .signup-card-right {
-  width: 60%;
+  width: 70%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.signup-card-right > div {
+  border-radius: 10px;
+  height: 80%;
+  width: 90%;
+  background-color: #ffffff;
+}
+
+.signup-card-right > div > div {
+  display: flex;
+  padding-top: 3%;
+  padding-left: 5%;
+  height: 10%;
+}
+.signup-card-right > div > form {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.signup-card-right > div > form > div:first-child {
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+
+.signup-card-right > div > form > div:first-child > div:first-child,
+.signup-card-right > div > form > div:first-child > div:last-child,
+.signup-card-right > div > form > div:nth-child(2) > div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+.signup-card-right > div > form > div:first-child > div > label {
+  font-family: "Montserrat";
+  color: #888888;
+  font-size: 13px;
+  padding: 1% 1% 1% 2px;
+}
+
+.signup-card-right > div > form > div:first-child > div > input {
+  height: 40px;
+  padding: 1%;
+  border-radius: 6px;
+  border: 2px #dfdfe8 solid;
+}
+
+.signup-card-right > div > form > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  justify-content: space-around;
+}
+
+.signup-card-right > div > form > div:nth-child(2) > div > label {
+  font-family: "Montserrat";
+  color: #888888;
+  font-size: 13px;
+  padding: 1% 1% 1% 2px;
+}
+
+.signup-card-right > div > form > div:nth-child(2) > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+.signup-card-right > div > form > div:nth-child(2) > div > input {
+  height: 40px;
+  padding: 1%;
+  border-radius: 6px;
+  border: 2px #dfdfe8 solid;
+}
+.signup-card-right > div > form > div:first-child > div > input:focus,
+.signup-card-right > div > form > div:nth-child(2) > div > input:focus {
+  outline: none;
+  border-radius: 6px;
+  border: 2px solid#1b7eff;
+}
+.signup-card-right > div > form > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 6%;
+  padding-top: 3%;
+}
+
+.signup-card-right > div > form > div:last-child > button {
+  background: #0c75ff;
+  width: 130px;
+  height: 40px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1600px) {
   .log-in img {
     top: 70px;

@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="/Assets/js/loginValidation.js"></script>
   </head>
   <body>
     <main class="log-in">
@@ -37,26 +38,26 @@
             <div>
               <h1>Sign in</h1>
             </div>
-            <form action="">
+            <form id="login-form" action="/" method="POST">
               <div>
                 <label for="email">Email address</label>
                 <input
                   id="email"
                   type="email"
-                  placeholder=""
-                  style="font-size: 1rem; padding: 0 10px; width: 100%"
+                  placeholder="Your email"
+                  required
                 />
+                <div id="email-error"></div>
               </div>
               <div>
                 <label for="password">Password</label>
                 <input
+                  type="password"
                   id="password"
-                  placeholder=""
-                  style="font-size: 1rem; padding: 0 10px; width: 100%"
+                  placeholder="Your secret password"
+                  required
                 />
-                <span class="input-group-text" (click)="currentPassword()">
-                  <i class="fa"></i>
-                </span>
+                <div id="password-error"></div>
               </div>
               <div>
                 <button type="submit" class="submit">Sign In</button>
@@ -66,9 +67,7 @@
             <div class="sign-up">
               <h6>Don't have an account</h6>
               <button class="submit">
-                <a
-                  href="signup.html"
-                  style="margin-top: 0; text-decoration: none; color: white"
+                <a style="margin-top: 0; text-decoration: none; color: white"
                   >Join Us Now!</a
                 >
               </button>
