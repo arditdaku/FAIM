@@ -231,7 +231,7 @@ p span {
   justify-content: center;
 }
 .contact-card-left {
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -256,10 +256,188 @@ p span {
   width: 42%;
 }
 
-.contact-card-right {
-  width: 50%;
-  height: 100%;
+.social-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 40%;
+  margin-left: 40px;
 }
+
+.social-buttons > a {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: centers;
+}
+.social-buttons > a > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15;
+  height: 15;
+}
+
+.social-buttons > a:hover {
+  background: #0c75ff;
+  border-radius: 50%;
+}
+
+.contact-card-right {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-card-right > div {
+  border-radius: 10px;
+  height: 80%;
+  width: 80%;
+
+  background-color: #ffffff;
+}
+.contact-card-right > div > form {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-card-right > div > form > div {
+  width: 100%;
+}
+.contact-card-right > div > form > div:first-child {
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  justify-content: space-around;
+}
+
+.contact-card-right > div > form > div:first-child > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+.contact-card-right > div > form > div:first-child > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+.contact-card-right > div > form > div:first-child > div > label {
+  color: #888888;
+  font-size: 13px;
+  padding: 1% 1% 1% 2px;
+}
+
+.contact-card-right > div > form > div:first-child > div > input {
+  height: 40px;
+  padding: 1%;
+  border-radius: 6px;
+  border: 2px #dfdfe8 solid;
+}
+
+.contact-card-right > div > form > div:first-child > div > input:focus {
+  outline: none;
+  border-radius: 6px;
+  border: 2px solid#1b7eff;
+}
+.contact-card-right > div > div {
+  display: flex;
+  padding-top: 3%;
+  padding-left: 5%;
+  height: 10%;
+}
+
+.contact-card-right > div > form > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  justify-content: space-around;
+}
+
+.contact-card-right > div > form > div:nth-child(2) > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+.contact-card-right > div > form > div:nth-child(2) > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+.contact-card-right > div > form > div:nth-child(2) > div > label {
+  color: #888888;
+  font-size: 13px;
+  padding: 1% 1% 1% 2px;
+}
+
+.contact-card-right > div > form > div:nth-child(2) > div > input {
+  height: 40px;
+  padding: 1%;
+  border-radius: 6px;
+  border: 2px #dfdfe8 solid;
+}
+
+.contact-card-right > div > form > div:nth-child(2) > div > input:focus {
+  outline: none;
+  border-radius: 6px;
+  border: 2px solid#1b7eff;
+}
+
+.contact-card-right > div > form > div:nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 1% 6% 1% 6%;
+}
+.contact-card-right > div > form > div:nth-child(3) > label {
+  color: #888888;
+  font-size: 13px;
+  padding: 1% 1% 1% 2px;
+}
+
+.contact-card-right > div > form > div:nth-child(3) > textarea {
+  padding: 1%;
+  border-radius: 6px;
+  border: 2px #dfdfe8 solid;
+}
+
+.contact-card-right > div > form > div:nth-child(3) > textarea:focus {
+  outline: none;
+  border-radius: 6px;
+  border: 2px solid#1b7eff;
+}
+.contact-card-right > div > form > div:nth-child(4) {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 6%;
+  padding-top: 3%;
+}
+.contact-card-right > div > form > div:nth-child(4) > button {
+  background: #0c75ff;
+  width: 130px;
+  height: 40px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1600px) {
   .log-in img {
     top: 70px;
