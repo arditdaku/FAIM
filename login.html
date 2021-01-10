@@ -12,68 +12,66 @@
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <main class="log-in">
-      <div class="left-side">
-        <img src="../../assets/images/Crossplag_Logo_Negativ.png" alt="" />
-        <h1>Fixed Assets & Inventory Managment</h1>
-        <p>
-          Faimly is an fixed asset & inventory mangagment system. Which helps in
-          making managment easy and lovable.
-        </p>
-        <h6>© All rights reserved - Faimly<span>TM</span>.</h6>
-      </div>
-      <div class="right-side">
-        <!-- <img
-          class="moblie-logo"
-          src="../../assets/images/Crossplag_Logo.png"
-          alt=""
-        /> -->
-        <div class="sign-up">
-          <h6>If you don't have an account</h6>
-          <button class="submit">
-            <a
-              href="signup.html"
-              style="margin-top: 0; text-decoration: none; color: white"
-              >Sign Up</a
-            >
-          </button>
-        </div>
-        <h3>Sign in</h3>
-        <form action="">
-          <label for="email">Email address</label>
-          <input
-            id="email"
-            type="email"
-            placeholder=""
-            style="font-size: 1rem; padding: 0 10px; width: 100%"
-          />
-
-          <label for="password">Password</label>
-          <div class="password">
-            <input
-              id="password"
-              placeholder=""
-              style="font-size: 1rem; padding: 0 10px; width: 100%"
-            />
-            <span class="input-group-text" (click)="currentPassword()">
-              <i
-                class="fa"
-                [ngClass]="{
-                        'fa-eye-slash': !showPassword,
-                        'fa-eye': showPassword
-                     }"
-              ></i>
-            </span>
+      <div class="card-container">
+        <div class="left-side">
+          <div>
+            <h1 class="logo" id="logo">FAILY</h1>
+            <h1>Fixed Assets & Inventory Managment</h1>
+            <p>
+              Faimly is an fixed asset & inventory mangagment system. Which
+              helps in making managment easy and lovable.
+            </p>
+            <h6>© All rights reserved - Faily<span>TM</span>.</h6>
           </div>
-        </form>
-        <div class="center">
-          <button type="submit" class="submit">SIGN IN</button>
+        </div>
+        <div class="right-side">
+          <div class="login-card">
+            <div>
+              <h1>Sign in</h1>
+            </div>
+            <form action="">
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder=""
+                  style="font-size: 1rem; padding: 0 10px; width: 100%"
+                />
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input
+                  id="password"
+                  placeholder=""
+                  style="font-size: 1rem; padding: 0 10px; width: 100%"
+                />
+                <span class="input-group-text" (click)="currentPassword()">
+                  <i class="fa"></i>
+                </span>
+              </div>
+              <button type="submit" class="submit">SIGN IN</button>
+            </form>
+
+            <div class="sign-up">
+              <h6>If you don't have an account</h6>
+              <button class="submit">
+                <a
+                  href="signup.html"
+                  style="margin-top: 0; text-decoration: none; color: white"
+                  >Sign Up</a
+                >
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </main>

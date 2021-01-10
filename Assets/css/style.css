@@ -2,14 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat";
+
   transition: all 0.5s;
 }
 :root {
-  --main-color: #9ec4fb;
-  --main-button-color: #0c75ff;
-  --background-color: #02044a;
-  --border-color: #0c78ff;
+  --main-color: #4275ff;
+  --main-button-color: #4275ff;
+  --background-color: #08044a;
+  --border-color: #08044a;
 
   --secondary-font-color: #aeafc5;
 }
@@ -22,71 +23,61 @@
 }
 .log-in {
   height: 100vh;
+  background: var(--main-color);
   display: flex;
-  border-radius: 0;
-  margin: 0 !important;
-}
-.log-in label {
-  font-size: 1rem;
-  color: #434343;
-  margin-top: 20px;
-  margin-left: 0;
-  display: inline-block;
-}
-
-.log-in input {
-  border: 1px solid #d9d9d9;
-  width: 100%;
-  background: #f5f7fa 0% 0% no-repeat padding-box;
-  border-radius: 10px;
-  padding: 5px 8px !important;
-  height: 35px;
-  font-size: 1.36rem;
-  margin: 5px 0;
-}
-
-.log-in input:focus {
-  outline: none;
-  border: 1px solid #d9d9d9;
-}
-.log-in img {
-  position: absolute;
-  top: 130px;
-  width: 33%;
-}
-.log-in a {
-  text-transform: uppercase;
-  line-height: 1.5rem;
-  margin-top: 9px;
-  text-align: right;
-}
-.log-in > div {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-}
-.left-side {
-  overflow: hidden;
-  background: transparent
-    linear-gradient(21deg, #3c4ef1 0%, var(--main-color) 100%) 0% 0% no-repeat
-    padding-box;
-  width: 50%;
   align-items: center;
+  justify-content: center;
 }
-.left-side svg {
-  position: absolute;
-  bottom: -300px;
-  left: -250px;
-  width: 100%;
+.card-container {
+  background: var(--background-color);
+  border-radius: 10px;
+  width: 90%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.left-side h6 {
+
+.left-side {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.left-side > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
-  font: normal normal lighter 1.125rem/1.5rem Montserrat;
-  position: absolute;
-  bottom: 53px;
+  width: 100%;
+  height: 100%;
+}
+.left-side > div > h1:nth-child(2) {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 4rem;
+}
+.left-side > div > p {
+  letter-spacing: 0px;
+  color: var(--secondary-font-color);
+  word-break: break-all;
+  width: 69%;
+  padding: 2;
+  padding-bottom: 5%;
+  padding-top: 1rem;
+}
+
+.logo {
+  padding: 13%;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: oblique;
+}
+
+.left-side > div > h6 {
+  color: white;
   margin: 0;
+  margin-top: 13rem;
 }
 .left-side h6 span {
   font-size: 0.5rem;
@@ -96,13 +87,58 @@
   position: absolute;
   top: 0;
 }
+
 .right-side {
-  padding: 0 97px;
-  box-sizing: border-box;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.right-side img {
-  display: none;
+.login-card {
+  border-radius: 10px;
+  height: 80%;
+  width: 80%;
+  background-color: #ffffff;
 }
+
+.login-card > div:first-child {
+  display: flex;
+  padding-top: 3%;
+  padding-left: 5%;
+  height: 10%;
+}
+.login-card > div:first-child > h1 {
+  color: var(--background-color);
+}
+
+.login-card > form {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.login-card > form > div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.login-card > form > div > label {
+  font-family: "Montserrat";
+  color: #888888;
+  font-size: 13px;
+  padding: 1% 1% 1% 2px;
+}
+
+.login-card > form > div > input {
+  height: 40px;
+  padding: 1%;
+  border-radius: 6px;
+  border: 2px #dfdfe8 solid;
+}
+
 .submit {
   background: var(--main-color);
   border-radius: 5px;
@@ -117,9 +153,6 @@
 }
 
 .log-in .sign-up {
-  position: absolute;
-  top: 64px;
-  right: 75px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -132,29 +165,10 @@
   font-weight: normal;
 }
 
-.sign-up h6 button {
-  margin: 0;
-  font: normal normal bold 1.25rem/1.5rem Montserrat !important;
-}
-h3 {
-  font: normal normal bold 1.75rem/1.93rem Montserrat;
-  color: var(--main-color);
-}
-
-p span {
-  font-size: 0.7rem;
-  margin-top: -5px;
-  margin-left: -3px;
-}
 .is-invalid {
   border: 0.1rem solid #ff000066;
 }
-.password {
-  position: relative;
-}
-.password i {
-  color: #00bbff;
-}
+
 .input-group-text {
   padding: 0 !important;
   border: none;
@@ -334,6 +348,7 @@ p span {
   width: 40%;
 }
 .contact-card-right > div > form > div:first-child > div > label {
+  font-family: "Montserrat";
   color: #888888;
   font-size: 13px;
   padding: 1% 1% 1% 2px;
@@ -356,6 +371,9 @@ p span {
   padding-top: 3%;
   padding-left: 5%;
   height: 10%;
+}
+.contact-card-right > div > div > h1 {
+  color: var(--background-color);
 }
 
 .contact-card-right > div > form > div:nth-child(2) {
@@ -380,6 +398,8 @@ p span {
   width: 40%;
 }
 .contact-card-right > div > form > div:nth-child(2) > div > label {
+  font-family: "Montserrat";
+
   color: #888888;
   font-size: 13px;
   padding: 1% 1% 1% 2px;
@@ -405,6 +425,8 @@ p span {
   padding: 1% 6% 1% 6%;
 }
 .contact-card-right > div > form > div:nth-child(3) > label {
+  font-family: "Montserrat";
+
   color: #888888;
   font-size: 13px;
   padding: 1% 1% 1% 2px;
@@ -426,6 +448,18 @@ p span {
   justify-content: flex-end;
   padding-right: 6%;
   padding-top: 3%;
+}
+
+.contact-card-right > div > form > div:nth-child(4) > input {
+  background: #0c75ff;
+  width: 130px;
+  height: 40px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-right: 2rem;
 }
 .contact-card-right > div > form > div:nth-child(4) > button {
   background: #0c75ff;
